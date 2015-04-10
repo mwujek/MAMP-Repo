@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Matt Wujek" />
+	<meta name="keywords" content="T-E-M-P-L-A-T-E"/>
+	<meta name="description" content="T-E-M-P-L-A-T-E"/>
+	<meta property="og:title" content="T-E-M-P-L-A-T-E" />
+	<meta property="og:url" content="http://www.mattwujek.com/" />
+	<meta property="og:image" content="http://mattwujek.com/fb.png"/>
+	<meta property="og:site_name" content="T-E-M-P-L-A-T-E"/>
+	<meta property="og:type"   content="website" /> 
+
+	<!-- <link href='img/icon.ico' rel='shortcut icon' type='image/ico'> -->
+
+	<title>T-E-M-P-L-A-T-E</title>
+
+	<!-- SCRIPTS -->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="bower_components/velocity/velocity.min.js"></script>
+	<script src="bower_components/typed.js/dist/typed.min.js"></script>
+	<script src="bower_components/greensock/src/minified/TimelineMax.min.js"></script>
+	<script src="bower_components/greensock/src/minified/TweenMax.min.js"></script>
+	<script src="bower_components/ScrollMagic/scrollmagic/minified/ScrollMagic.min.js"></script>
+	<script src="bower_components/ScrollMagic/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
+	<script src="bower_components/ScrollMagic/scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
+	<script src="bower_components/paper/dist/paper-full.min.js"></script>
+
+	<!-- TYPEKIT -->
+
+	<script src="//use.typekit.net/cbo1nzu.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
+
+	<!-- STYLE SHEETS -->
+
+	<link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
+	<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+
+
+</head>
+<body>
+
+	<div class="product-container">
+		<header>
+			<img src="img/assets/logo.png">
+		</header>
+		<div class="icons" id="menu"></div>
+		<div class="icons" id="fs"></div>
+		<div class="icons" id="bag"></div>
+
+
+		<!-- checkout section -->
+		<div id="checkout-section">
+			<nav>
+				<h1>Shopping Bag</h1>
+			</nav>
+			<div class="checkout-container">
+				<div id="load">
+
+					<div class="card">
+						<div class="card-section product-section">
+							<section class="product-in-cart">
+								<div class="undo">
+									<div>
+										<span class="undo-btn">undo</span>
+										<p>Removed <b>The Cotton V</b> from your bag.</p>
+									</div>
+								</div>
+								<div class="product-image"></div>
+								<div class="description">
+									<div class="cross"></div>
+									<h1 class="first-h1">The Cotton V</h1>
+									<h1>- Field</h1>
+									<table>
+										<tr>
+											<th>Size</th>
+											<th>Price</th>
+										</tr>
+										<tr>
+											<td>Small</td>
+											<td>$15</td>
+										</tr>
+									</table>
+								</div>
+
+							</section> <!-- end of product -->
+
+							<section class="product-in-cart">
+															<div class="undo">
+									<div>
+										<span class="undo-btn">undo</span>
+										<p>Removed <b>The Cotton V</b> from your bag.</p>
+									</div>
+								</div>
+								<div class="product-image"></div>
+								<div class="description">
+									<div class="cross"></div>
+									<h1 class="first-h1">The Cotton V</h1>
+									<h1>- Navy</h1>
+									<table>
+										<tr>
+											<th>Size</th>
+											<th>Price</th>
+										</tr>
+										<tr>
+											<td>Small</td>
+											<td>$15</td>
+										</tr>
+									</table>
+								</div>
+
+							</section> <!-- end of product -->
+
+						</div> <!-- end of card section -->
+
+						<div class="card-section cost">
+
+							<div class="left-column">
+								<ul>
+									<li>Subtotal</li>
+									<li>Shipping</li>
+									<li>Tax</li>
+									<li class="total">Total</li>
+								</ul>
+							</div> <!-- end of left-column -->
+
+							<div class="right-column">
+								<ul>
+									<li>$30</li>
+									<li>FREE</li>
+									<li>$2.79</li>
+									<li class="total">$32.79</li>
+								</ul>
+							</div> <!-- end of right-column -->
+
+						</div> <!-- end of card section -->
+					</div> <!-- end of card -->
+
+					<div class="card">
+						<div class="card-section expand-cards" id="payment-info">
+							<div class="expand"></div>
+							<h2>Payment Information</h2>
+							<ul class="main-list" id="payment-list">
+								<li>Matt Wujek</li>
+								<li>Visa ************0161</li>
+								<li>11/17</li>
+							</ul>
+							<div class="expanded-content" id="payment">
+								<div class="inside-hidden" id="inside-hidden-payment">
+
+									<div class="info-selection-section" id="hidden-payment">
+										<div class="select-btn selected right-col-btn"><p class="active-btn">Selected</p></div>
+										<ul>
+											<li><b>New Name</b></li>
+											<li>Visa ************9988</li>
+											<li>04/16</li>
+										</ul>
+									</div>
+
+									<div class="info-selection-section">
+										<div class="select-btn selected right-col-btn"><p class="active-btn">Selected</p></div>
+										<ul>
+											<li><b>Matt Wujek</b></li>
+											<li>Visa ************0161</li>
+											<li>11/17</li>
+										</ul>
+									</div>
+
+									<div class="info-selection-section">
+										<div class="select-btn select right-col-btn"><p>Select</p></div>
+										<ul>
+											<li><b>Becky Lin</b></li>
+											<li>Mastercard ************0161</li>
+											<li>12/15</li>
+										</ul>
+									</div>
+
+
+									<div class="select-btn add-new" id="add-new-payment">
+										<p>+ New Card</p>
+									</div>
+									
+									</div> <!-- end of inside hidden -->
+								</div> <!-- end of expanded content -->
+							</div> <!-- end of card section -->
+						</div> <!-- end of card -->
+
+						<div class="card">
+							<div class="card-section expand-cards" id="shipping-info">
+								<div class="expand"></div>
+								<h2>Shipping Information</h2>
+								<ul class="main-list" id="address-list">
+									<li>Matt Wujek</li>
+									<li>333 Fake Street</li>
+									<li>San Francisco, CA 94121</li>
+								</ul>
+
+								<div class="expanded-content" id="shipping">
+									<div class="inside-hidden" id="inside-hidden-address">
+
+									<div class="info-selection-section" id="hidden-address">
+											<div class="select-btn selected right-col-btn"><p class="active-btn">Selected</p></div>
+											<ul>
+												<li><b>New Address</b></li>
+												<li>1000 Main Street</li>
+												<li>Seattle, WA 90222</li>
+											</ul>
+										</div>
+
+										<div class="info-selection-section">
+											<div class="select-btn selected right-col-btn"><p class="active-btn">Selected</p></div>
+											<ul>
+												<li><b>Matt Wujek</b></li>
+												<li>333 Fake Street</li>
+												<li>San Francisco, CA 94121</li>
+											</ul>
+										</div>
+
+										<div class="info-selection-section">
+											<div class="select-btn select right-col-btn"><p>Select</p></div>
+											<ul>
+												<li><b>Becky Lin</b></li>
+												<li>1050 Chestnut Street</li>
+												<li>Walla Walla, WA 99362</li>
+											</ul>
+										</div>
+
+
+										<div class="select-btn add-new" id="add-new-address">
+											<p>+ New Address</p>
+										</div>
+										</div> <!-- end of inside hidden -->
+									</div> <!-- end of expanded content -->
+
+
+								</div>
+
+
+							</div> <!-- end of card section -->
+
+							<div class="card">
+								<div class="card-section expand-cards" id="shipping-options">
+									<h2>Shipping Options</h2>
+									<ul>
+										<li>3-5 Days Standard Shipping – FREE</li>
+										<li>2 Day Express Shipping – $15</li>
+									</ul>
+								</div> <!-- end of card section -->
+							</div> <!-- end of card -->
+
+							<div class="card">
+								<div class="card-section expand-cards" id="gift-code">
+									<h2>Gift Code</h2>
+									<p>Redeem Gift Code</p>
+								</div> <!-- end of card section -->
+							</div> <!-- end of card -->
+
+							<div class="card">
+								<div class="card-section expand-cards" id="gift-options">
+									<h2>Gift Code</h2>
+									<p>Include a gift message</p>
+								</div> <!-- end of card section -->
+							</div> <!-- end of card -->
+
+
+							<div id="place-order">
+								<h1>Place Order</h1>
+							</div>
+
+
+
+						</div> <!-- end of load -->
+					</div> <!-- end of absolute container -->
+				</div>
+
+
+			</div> <!-- end of container -->
+
+
+
+
+
+			<script src="js/wuj.js"></script>
+		</body>
+		</html>

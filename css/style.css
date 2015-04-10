@@ -1,0 +1,373 @@
+body {
+  font-family: "ff-dagny-web-pro", sans-serif;
+  color: #242424;
+  background-color: #frelativeff; }
+
+body, html {
+  width: 100%;
+  height: 100%; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "sofia-pro", sans-serif;
+  font-weight: 200;
+  display: block;
+  max-width: 100%; }
+
+#ajax-container {
+  transition: opacity 0.5s; }
+
+#content {
+  transition: 0.3s opacity;
+  vertical-align: top; }
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-feature-settings: 'lnum';
+  -moz-font-feature-settings: 'lnum';
+  -ms-font-feature-settings: 'lnum';
+  font-feature-settings: 'lnum';
+  box-sizing: border-box; }
+
+p, h1, h2, h3, h4, h5, h6 {
+  -webkit-font-feature-settings: 'lnum';
+  -moz-font-feature-settings: 'lnum';
+  -ms-font-feature-settings: 'lnum';
+  font-feature-settings: 'lnum'; }
+
+a {
+  text-decoration: none;
+  color: #ccc; }
+
+.text-container {
+  transition: 0.3s all;
+  margin-top: 120px; }
+  .text-container h1 {
+    margin: 40px auto 20px auto;
+    text-align: center; }
+
+p {
+  font-weight: 300;
+  margin-bottom: 18px;
+  font-size: 15px;
+  line-height: 20px;
+  padding: 0 8px; }
+
+h1 {
+  font-family: "sofia-pro", sans-serif;
+  font-weight: 700;
+  font-size: 24px; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px;
+  border-spacing: 0px;
+  box-sizing: border-box;
+  overflow: hidden; }
+
+#ajax-container .col {
+  vertical-align: top;
+  max-width: 100%;
+  transition: 0.8s opacity;
+  position: relative; }
+
+.col {
+  vertical-align: top; }
+
+a {
+  color: #68B4FB; }
+
+.typed-cursor {
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite; }
+
+@keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-moz-keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@media (min-width: 600px) {
+  .row {
+    border-spacing: 20px 0; }
+
+  p {
+    font-size: 16px;
+    line-height: 22px; }
+
+  nav {
+    width: 235px; }
+    nav #indicator-circle {
+      display: block;
+      width: 16px;
+      height: 16px;
+      border-radius: 8px;
+      position: absolute;
+      bottom: 1px;
+      right: 80px;
+      border: 1px solid #ccc;
+      background: #fff;
+      transition: 0.5s all; }
+    nav #indicator-line {
+      transform-origin: center left;
+      width: 80px;
+      display: block;
+      position: absolute;
+      bottom: 9px;
+      right: 0px;
+      height: 1px;
+      background: #ccc; }
+    nav h1, nav h2 {
+      font-family: "sofia-pro", sans-serif; }
+    nav h1 {
+      padding-top: 60px;
+      margin-top: 0px;
+      margin-bottom: 16px;
+      font-size: 24px;
+      line-height: 24px;
+      position: relative; }
+    nav h2 {
+      margin: 0px;
+      padding: 0px;
+      font-size: 18px;
+      line-height: 24px;
+      color: #ccc; }
+    nav .menu-btn {
+      color: #ccc;
+      text-transform: uppercase;
+      font-size: 14px;
+      letter-spacing: 2px;
+      border-bottom: 1px #ccc solid;
+      padding-bottom: 1px;
+      margin-top: 20px;
+      display: inline-block;
+      font-weight: 200;
+      transition: 0.3s all; }
+    nav .active-nav {
+      color: #242424 !important;
+      border-color: #242424; }
+    nav #nav-list {
+      display: block;
+      list-style: none;
+      text-indent: 0px;
+      margin: 0px;
+      padding: 0px;
+      margin-top: 20px;
+      text-align: left;
+      position: relative;
+      left: -16px; }
+      nav #nav-list li {
+        position: relative;
+        text-indent: 0px;
+        margin: 0px;
+        padding: 0px;
+        margin-bottom: 6px;
+        font-weight: 200; }
+        nav #nav-list li a {
+          margin: 0px;
+          padding: 0px;
+          text-indent: 0px;
+          color: #ccc; }
+
+  .circle-tag {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 12px;
+    background: #333;
+    margin-right: 6px; }
+
+  .work-circle {
+    margin-left: 2px;
+    margin-right: 0px;
+    position: relative;
+    top: -2px; }
+
+  .tag-mobile {
+    background: #80D4FA; }
+
+  .tag-proto {
+    background: #A5D6A7; }
+
+  .tag-web {
+    background: #EF9A9A; }
+
+  .tag-d3 {
+    background: #FFE082; }
+
+  .tag-installation {
+    background: #CE93D8; }
+
+  .tag-framer {
+    background: #BCAAA4; }
+
+  .tag-processing {
+    background: #AFBEC5; }
+
+  .tag-list ul {
+    list-style: none;
+    text-indent: 0px;
+    margin: 0px;
+    padding: 0px; }
+    .tag-list ul li:last-child {
+      margin-right: 0px; }
+    .tag-list ul li {
+      margin-right: 14px;
+      color: #ccc;
+      text-indent: 0px;
+      padding: 0px;
+      list-style: none;
+      display: inline-block; }
+      .tag-list ul li:hover {
+        text-decoration: underline;
+        cursor: pointer; }
+
+  .work-list {
+    text-indent: 0px;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    margin-top: 20px; }
+    .work-list li {
+      text-indent: 0px;
+      font-family: "sofia-pro", sans-serif;
+      margin: 0px;
+      font-size: 24px;
+      padding: 0px; }
+      .work-list li span:first-child {
+        margin-left: 6px; }
+
+  .inactive {
+    opacity: 0.5; }
+
+  .filter-reset span {
+    font-size: 14px;
+    margin-right: 6px; }
+
+  .section-title {
+    text-transform: uppercase;
+    position: relative;
+    font-size: 24px;
+    letter-spacing: 2px;
+    text-align: left !important;
+    margin-top: 54px !important;
+    margin-bottom: 16px !important; }
+
+  .bio-info {
+    margin-bottom: 20px;
+    border-spacing: 0px;
+    max-width: 500px; }
+    .bio-info .col-pic {
+      width: 100px; }
+    .bio-info .profile-pic {
+      width: 100px;
+      height: 100px;
+      background: url(../img/profile.jpg);
+      border-radius: 8px;
+      background-size: cover;
+      display: inline-block; }
+    .bio-info .bio-btn-list {
+      list-style: none;
+      text-indent: 0px;
+      margin: 0px;
+      padding: 0px;
+      margin-left: 15px; }
+      .bio-info .bio-btn-list li:last-child {
+        margin-bottom: 0px !important; }
+      .bio-info .bio-btn-list li {
+        text-align: left;
+        margin: 0px;
+        padding: 0px;
+        height: 28px;
+        line-height: 28px;
+        text-indent: 0px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        margin-bottom: 5px;
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
+        float: left;
+        clear: both;
+        background: #fff; }
+      .bio-info .bio-btn-list .btn-li .btn-text {
+        position: relative;
+        top: -2px; }
+      .bio-info .bio-btn-list .btn-cv .btn-text {
+        position: relative;
+        top: -2px; }
+      .bio-info .bio-btn-list .email-address {
+        text-align: left !important; }
+      .bio-info .bio-btn-list .btn-text {
+        padding: 0px 20px;
+        display: inline-block; }
+        .bio-info .bio-btn-list .btn-text:hover {
+          cursor: pointer; }
+      .bio-info .bio-btn-list .hidden-btn {
+        transform-origin: center left;
+        display: inline-block;
+        right: 0px;
+        top: 0px;
+        text-align: center;
+        padding: 0px 20px;
+        box-sizing: border-box !important;
+        border-left: 1px solid #ccc;
+        color: #ccc;
+        height: 28px; }
+      .bio-info .bio-btn-list .fa-external-link {
+        color: #ccc;
+        position: relative;
+        text-align: center;
+        line-height: 28px;
+        transition: 0.3s all; }
+        .bio-info .bio-btn-list .fa-external-link:hover {
+          background: #eee; }
+
+  .bio-copy {
+    font-family: "sofia-pro", sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+    max-width: 650px;
+    margin: 0px;
+    padding: 0px; }
+    .bio-copy .giants-link {
+      color: #FF9825;
+      border-bottom: 1px solid #FF9825;
+      padding-bottom: 0px;
+      transition: 0.3s all; }
+      .bio-copy .giants-link:hover {
+        cursor: pointer;
+        color: #EF6A1D;
+        border-color: #EF6A1D; }
+
+  #bg-canvas {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1; } }
+@media (min-width: 30em) {
+  .row {
+    width: 100%;
+    display: table;
+    table-layout: fixed; }
+
+  .col {
+    display: table-cell; } }

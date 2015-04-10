@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Matt Wujek" />
+	<meta name="keywords" content="T-E-M-P-L-A-T-E"/>
+	<meta name="description" content="T-E-M-P-L-A-T-E"/>
+	<meta property="og:title" content="T-E-M-P-L-A-T-E" />
+	<meta property="og:url" content="http://www.mattwujek.com/" />
+	<meta property="og:image" content="http://mattwujek.com/fb.png"/>
+	<meta property="og:site_name" content="T-E-M-P-L-A-T-E"/>
+	<meta property="og:type"   content="website" /> 
+
+	<!-- <link href='img/icon.ico' rel='shortcut icon' type='image/ico'> -->
+
+	<title>Everlane Checkout</title>
+
+	<!-- SCRIPTS -->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="bower_components/velocity/velocity.min.js"></script>
+	<script src="bower_components/typed.js/dist/typed.min.js"></script>
+	<script src="bower_components/greensock/src/minified/TimelineMax.min.js"></script>
+	<script src="bower_components/greensock/src/minified/TweenMax.min.js"></script>
+	<script src="bower_components/ScrollMagic/scrollmagic/minified/ScrollMagic.min.js"></script>
+	<script src="bower_components/ScrollMagic/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
+	<script src="bower_components/ScrollMagic/scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
+	<script src="bower_components/paper/dist/paper-full.min.js"></script>
+
+	<!-- TYPEKIT -->
+
+	<script src="//use.typekit.net/cbo1nzu.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
+
+	<!-- STYLE SHEETS -->
+
+	<link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
+	<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+
+
+</head>
+<body>
+
+		<div id="new-address">
+			<div class="input-section">
+				<span class="fa fa-angle-left back-icon" id="back-new-address"></span>
+				<h1>Shipping Address</h1>
+				<input placeholder="Full Name" type="text" name="address[full_name]" id="address_full_name">
+				<select class="select country" name="address[country]" id="address_country"><option selected="selected" placeholder="Country">Country</option>
+				</select>
+				<input placeholder="Address Line 1" class="" type="text" placeholder="Address Line 1" name="address[street_address]" id="address_street_address" />
+				<input placeholder="Address Line 2" type="text" placeholder="Address Line 2" name="address[extended_address]" id="address_extended_address" />
+				<input placeholder="City" class="" type="text" placeholder="City" name="address[city]" id="address_city" />
+				<select class="select country" name="address[country]" id="address_country"><option selected="selected" placeholder="State">State</option>
+					<input placeholder="Zip Code" maxlength="10" class=" last " size="10" type="text" placeholder="Zip Code" name="address[postal_code]" id="address_postal_code" />
+					<div class="select-btn submit-new" id="save-address">
+						<p>Add Address</p>
+					</div>
+				</div> <!-- end of input section -->
+			</div> <!-- end of new address -->
+
+			<div id="new-payment">
+			<div class="input-section">
+				<span class="fa fa-angle-left back-icon" id="back-new-payment"></span>
+				<h1>Billing Information</h1>
+				<input placeholder="Full Name" type="text" name="address[full_name]" id="address_full_name">
+				<select class="select country" name="address[country]" id="address_country"><option selected="selected" placeholder="Country">Country</option>
+				</select>
+				<input placeholder="Credit Card #" class="" type="text" placeholder="Address Line 1" name="address[street_address]" id="address_street_address" />
+				<input placeholder="Security Code" type="text" placeholder="Address Line 2" name="address[extended_address]" id="address_extended_address" />
+				<input placeholder="Expiration Date (MM/YY)" class="" type="text" placeholder="City" name="address[city]" id="address_city" />
+					<input placeholder="Zip Code" maxlength="10" class=" last " size="10" type="text" placeholder="Zip Code" name="address[postal_code]" id="address_postal_code" />
+					<div class="select-btn submit-new" id="save-payment">
+						<p>Save Information</p>
+					</div>
+				</div> <!-- end of input section -->
+			</div> <!-- end of new payment -->
+
+	<div class="product-container">
+		<header>
+			<img src="img/assets/logo.png">
+		</header>
+		<div class="icons" id="menu"></div>
+		<div class="icons" id="fs"></div>
+		<div class="icons" id="bag"></div>
+
+
+
+
+			<!-- checkout section -->
+			<div id="checkout-section-1">
+				<nav>
+					<h1>Shopping Bag</h1>
+				</nav>
+				<div class="checkout-container" id="ajax-content">
+					<div id="load">
+						<div class="bg-color">
+
+							<div class="card" id="checkout-cta">
+								<h1 class="left-side">Subtotal</h1>
+								<h1 class="right-side">$30</h1>
+								<div id="checkout-btn"><a href="checkout.html"><h1>Checkout</h1></a></div>
+							</div>
+						</div>
+
+
+						<div class="card" id="checkout-a">
+							<div class="card-section push-down">
+								<section class="product-in-cart">
+									<div class="undo">
+										<div>
+											<span class="undo-btn">undo</span>
+											<p>Removed <b>The Cotton V</b> from your bag.</p>
+										</div>
+									</div>
+									<div class="product-image"></div>
+									<div class="description">
+										<div class="cross"></div>
+										<h1 class="first-h1">The Cotton V</h1>
+										<h1>- Field</h1>
+										<table>
+											<tr>
+												<th>Size</th>
+												<th>Price</th>
+											</tr>
+											<tr>
+												<td>Small</td>
+												<td>$15</td>
+											</tr>
+										</table>
+									</div>
+
+								</section> <!-- end of product -->
+
+								<section class="product-in-cart">
+									<div class="undo">
+										<div>
+											<span class="undo-btn">undo</span>
+											<p>Removed <b>The Cotton V</b> from your bag.</p>
+										</div>
+									</div>
+									<div class="product-image"></div>
+									<div class="description">
+										<div class="cross"></div>
+										<h1 class="first-h1">The Cotton V</h1>
+										<h1>- Navy</h1>
+										<table>
+											<tr>
+												<th>Size</th>
+												<th>Price</th>
+											</tr>
+											<tr>
+												<td>Small</td>
+												<td>$15</td>
+											</tr>
+										</table>
+									</div>
+
+								</section> <!-- end of product -->
+
+							</div> <!-- end of card section -->
+						</div>
+
+
+
+					</div> <!-- end of container -->
+
+
+				</div> <!-- end of load -->
+			</div> <!-- end of checkout-section-1 -->
+
+
+
+
+
+			<script src="js/wuj.js"></script>
+		</body>
+		</html>
