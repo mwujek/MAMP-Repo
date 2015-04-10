@@ -64,6 +64,46 @@ $(document).ready(function(){
 
 	});
 
+	// scroll up & waypoints
+	var scrollArrow = $('.up-arrow');
+	var toggleArrow = new Waypoint({
+	  element: document.getElementById('scroll-trigger'),
+	  handler: function(direction) {
+	    console.log(direction);
+	    if (direction === "up"){
+	    	scrollArrow.velocity({scaleX:0.1, scaleY:0.1, opacity:0},{duration:300});
+			scrollArrow.data.visible = false;
+	    } else {
+	    	scrollArrow.velocity({scaleX:1, scaleY:1, opacity:1},{duration:300});
+			scrollArrow.data.visible = true;
+	    }
+	  }
+	});
+	$('.up-arrow').data({visible:false});
+	$('.up-arrow').click(function() {
+		var el = $(this);
+		$('body').velocity("scroll", {
+			duration: 1000,
+			complete: function(){
+				//el.velocity({scaleX:0.1, scaleY:0.1, opacity:0},{duration:300});
+				//el.data.visible = false;
+			}
+		});
+	});
+
+	// project template
+	$('.image-thumbnail').each(function() {
+		var el = $(this);
+		var parent = el.parent();
+		var info = parent.find('.thumbnail-info');
+		parent.hover(function() {
+			info.velocity("finish");
+			info.velocity({left:0, opacity:1},{duration:300});
+		}, function() {
+			info.velocity({left:-50, opacity:0},{duration:300});
+		});
+	});
+
 	// filter work
 
 	$('.work-list li').each(function(){
@@ -79,7 +119,7 @@ $(document).ready(function(){
 			processing:false
 		});
 		$.each( tags, function() {
-			var tagClass = $(this).attr('class');
+			//var tagClass = $(this).attr('class');
 			if($(this).hasClass('tag-mobile')){ listEl.data('mobile', true); }
 			if($(this).hasClass('tag-proto')){ listEl.data('proto', true); }
 			if($(this).hasClass('tag-d3')){ listEl.data('d3', true); }
@@ -93,12 +133,17 @@ $(document).ready(function(){
 		console.log(listEl.data());
 	});
 
+	// function toggleRefresh(action){
+	// 	//if ()
+
+	// }
+
 	$('#tag-ul li').each(function(){
 		$(this).data({active:false});
 		$(this).click(function() {
 			var spanEl = $(this).find('span');
 			var el = $(this);
-			var selected = $('.work-list').find('li')
+			var selected = $('.work-list').find('li');
 			if (el.data('active') === false){
 				if( spanEl.hasClass('tag-mobile')){
 
@@ -106,7 +151,7 @@ $(document).ready(function(){
 						console.log(i);
 						if ($(this).data('mobile') === true){
 							console.log('mobile!');
-							
+							//toggleRefresh('add');
 						} else {
 							$(this).addClass('inactive');
 						}
@@ -117,7 +162,6 @@ $(document).ready(function(){
 				selected.removeClass('inactive');
 				el.data({active:true});
 			}
-			
 			}); // end of click
 		}); // end of each
 	// giants link
