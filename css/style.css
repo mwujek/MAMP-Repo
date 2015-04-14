@@ -212,6 +212,10 @@ a {
           text-indent: 0px;
           color: #ccc; }
 
+  .active-tag {
+    color: #242424 !important;
+    transition: 0.3s color; }
+
   .circle-tag {
     display: inline-block;
     width: 10px;
@@ -273,6 +277,7 @@ a {
     margin-top: 20px; }
     .work-list li {
       text-indent: 0px;
+      opacity: 0.5;
       font-family: "sofia-pro", sans-serif;
       margin: 0px;
       font-size: 24px;

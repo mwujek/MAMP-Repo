@@ -4,6 +4,8 @@ $body-medium:500;
 $body-bold: 700;
 $body-black: 900;
 
+$red: #F44336;
+
 $body-text-family: "ff-dagny-web-pro",sans-serif;
 // $core-sans-family: "CoreSansD25Light", sans-serif;
 // $core-sans-family-med: "CoreSansD45Medium", sans-serif;
@@ -281,6 +283,11 @@ $body-lh-desktop: 22px;
 		}
 	 } // end of nav
 
+	 .active-tag{
+	 	color:$primary-font-color !important;
+	 	transition:0.3s color;
+	 }
+
 	 .circle-tag{
 	 	display: inline-block;
 	 	width: 10px;
@@ -329,6 +336,7 @@ $body-lh-desktop: 22px;
 	 	}
 	 }
 
+
 	 .work-list{
 	 	text-indent: 0px;
 	 	margin: 0px;
@@ -337,6 +345,7 @@ $body-lh-desktop: 22px;
 	 	margin-top: 20px;
 	 	li{
 	 		text-indent: 0px;
+	 		opacity: 0.5;
 	 		font-family: $sofia-family;
 	 		margin: 0px;
 	 		font-size: $heading-font-size;
