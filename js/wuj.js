@@ -66,19 +66,19 @@ $(document).ready(function(){
 
 	// scroll up & waypoints
 	var scrollArrow = $('.up-arrow');
-	var toggleArrow = new Waypoint({
-	  element: document.getElementById('scroll-trigger'),
-	  handler: function(direction) {
-	    console.log(direction);
-	    if (direction === "up"){
-	    	scrollArrow.velocity({scaleX:0.1, scaleY:0.1, opacity:0},{duration:300});
-			scrollArrow.data.visible = false;
-	    } else {
-	    	scrollArrow.velocity({scaleX:1, scaleY:1, opacity:1},{duration:300});
-			scrollArrow.data.visible = true;
-	    }
-	  }
-	});
+	// var toggleArrow = new Waypoint({
+	//   element: document.getElementById('scroll-trigger'),
+	//   handler: function(direction) {
+	//     console.log(direction);
+	//     if (direction === "up"){
+	//     	scrollArrow.velocity({scaleX:0.1, scaleY:0.1, opacity:0},{duration:300});
+	// 		scrollArrow.data.visible = false;
+	//     } else {
+	//     	scrollArrow.velocity({scaleX:1, scaleY:1, opacity:1},{duration:300});
+	// 		scrollArrow.data.visible = true;
+	//     }
+	//   }
+	// });
 	$('.up-arrow').data({visible:false});
 	$('.up-arrow').click(function() {
 		var el = $(this);

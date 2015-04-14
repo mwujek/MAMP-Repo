@@ -66,13 +66,13 @@
 					<h1 class="section-title">Blog</h1>
 					<div class="tag-list">
 						<ul id="tag-ul">
-							<li><span class="circle-tag tag-mobile"></span>mobile</li>
-							<li><span class="circle-tag tag-proto"></span>prototyping</li>
+							<li><span class="circle-tag tag-mobile"></span>personal</li>
+							<li><span class="circle-tag tag-proto"></span>design</li>
 							<li><span class="circle-tag tag-web"></span>web</li>
-							<li><span class="circle-tag tag-d3"></span>d3.js</li>
-							<li><span class="circle-tag tag-installation"></span>installation</li>
-							<li><span class="circle-tag tag-framer"></span>framer</li>
-							<li><span class="circle-tag tag-processing"></span>processing</li>
+							<li><span class="circle-tag tag-d3"></span>data visualization</li>
+							<li><span class="circle-tag tag-installation"></span>work</li>
+							<li><span class="circle-tag tag-framer"></span>hobbies</li>
+							<li><span class="circle-tag tag-processing"></span>miscellaneous</li>
 							<li class="filter-reset"><span class="fa fa-trash"></span>reset</li>
 						</ul>
 
