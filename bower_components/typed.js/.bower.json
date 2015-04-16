@@ -20,6 +20,5 @@
   },
   "_source": "git://github.com/mattboldt/typed.js.git",
   "_target": "*",
-  "_originalSource": "typed.js",
-  "_direct": true
+  "_originalSource": "typed.js"
 }

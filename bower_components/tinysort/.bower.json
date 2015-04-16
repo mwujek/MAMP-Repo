@@ -41,6 +41,5 @@
   },
   "_source": "git://github.com/Sjeiti/TinySort.git",
   "_target": "~2.2.2",
-  "_originalSource": "tinysort",
-  "_direct": true
+  "_originalSource": "tinysort"
 }

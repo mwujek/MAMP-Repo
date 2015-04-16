@@ -22,11 +22,13 @@
 	<script src="bower_components/paper/dist/paper-full.min.js"></script>
 	<script src="bower_components/jquery-pjax/jquery.pjax.js"></script>
 	<script src="bower_components/velocity/velocity.min.js"></script>
+	<script src="bower_components/velocity/velocity.ui.min.js"></script>
+	
 	<!--<script src="js/jquery.ba-hashchange.min.js"></script>-->
 	<script src="bower_components/typed.js/dist/typed.min.js"></script>
 	<!--<script src="js/dynamicpage.js"></script>-->
 
-	<script src="bower_components/tinysort/dist/tinysort.min.js"></script>
+	<!--CDN link for the latest TweenMax-->
 
 
 
@@ -65,44 +67,104 @@
 			<div class="col text-container" id="ajax-container">
 				<section id="content">
 					<h1 class="section-title">Work</h1>
-					<div class="tag-list">
-						<ul id="tag-ul">
-							<li><span class="circle-tag tag-mobile"></span>mobile</li>
-							<li><span class="circle-tag tag-proto"></span>prototyping</li>
-							<li><span class="circle-tag tag-web"></span>web</li>
-							<li><span class="circle-tag tag-d3"></span>d3.js</li>
-							<li><span class="circle-tag tag-installation"></span>installation</li>
-							<li><span class="circle-tag tag-framer"></span>framer</li>
-							<li><span class="circle-tag tag-processing"></span>processing</li>
-							<li class="filter-reset"><span class="fa fa-trash"></span>reset</li>
-						</ul>
-					</div>
-					<ul class="work-list">
-						<li class="work-everlane">Everlane
-							<span class="circle-tag work-circle tag-mobile"></span>
-							<span class="circle-tag work-circle tag-proto"></span>
-							<span class="circle-tag work-circle tag-web"></span>
-							<span class="circle-tag work-circle tag-framer"></span>
-						</li>
-						<li class="work-theis">Senior Thesis Project
-							<span class="circle-tag work-circle tag-installation"></span>
-							<span class="circle-tag work-circle tag-processing"></span>
-						</li>
-						<li class="work-scoot">Scoot Networks
-							<span class="circle-tag work-circle tag-mobile"></span>
-							<span class="circle-tag work-circle tag-proto"></span>
-							<span class="circle-tag work-circle tag-framer"></span>
-						</li>
-						<li class="work-revolver">Revolver Yoga
-							<span class="circle-tag work-circle tag-proto"></span>
-							<span class="circle-tag work-circle tag-web"></span>
-						</li>
-						<li class="work-muni">Muni Daily
-							<span class="circle-tag work-circle tag-web"></span>
-							<span class="circle-tag work-circle tag-d3"></span>
-						</li>
-					</ul>
-				</section>
+						<span class="filter-btn">Filter<span class="fa fa-angle-right filter-cross" id="cross"></span></span>
+						<div class="tag-list">
+							<ul id="tag-ul">
+								<li><span class="circle-tag tag-mobile"></span>mobile</li>
+								<li><span class="circle-tag tag-proto"></span>prototyping</li>
+								<li><span class="circle-tag tag-web"></span>web</li>
+								<li><span class="circle-tag tag-d3"></span>d3.js</li>
+								<li><span class="circle-tag tag-installation"></span>installation</li>
+								<li><span class="circle-tag tag-framer"></span>framer</li>
+								<li><span class="circle-tag tag-processing"></span>processing</li>
+								<li class="filter-reset"><span class="fa fa-trash"></span>reset</li>
+							</ul>
+						</div>
+
+					<div class="work-list">
+						<div class="work-container">
+							<figure class="row work-everlane">
+								<figcaption class="col">
+									<h1>Everlane</h1>
+									<h2>Spring 2015</h2>
+									<ul>
+										<li><span class="circle-tag work-circle tag-mobile"></span></li>
+										<li><span class="circle-tag work-circle tag-proto"></span></li>
+										<li><span class="circle-tag work-circle tag-web"></span></li>
+										<li><span class="circle-tag work-circle tag-framer"></span></li>
+									</ul>
+									<span class="standard-btn project-btn" href="#1">View Project</span>
+								</figcaption>
+								<div class="work-img col" id="work-everlane"></div>
+							</figure>
+						</div>
+
+						<div class="work-container">
+							<figure class="row work-thesis">
+								<div class="work-img col" id="work-thesis"></div>
+								<figcaption class="col">
+									<h1>Senior Thesis</h1>
+									<h2>Spring 2014</h2>
+									<ul>
+										<li><span class="circle-tag work-circle tag-installation"></span></li>
+										<li><span class="circle-tag work-circle tag-processing"></span></li>
+									</ul>
+									<span class="standard-btn project-btn" href="#2">View Project</span>
+								</figcaption>
+							</figure>
+						</div>
+
+						<div class="work-container">
+							<figure class="row work-scoot">
+								<figcaption class="col">
+									<h1>Scoot Networks</h1>
+									<h2>Winter 2014</h2>
+									<ul>
+										<li><span class="circle-tag work-circle tag-mobile"></span></li>
+										<li><span class="circle-tag work-circle tag-proto"></span></li>
+										<li><span class="circle-tag work-circle tag-framer"></span></li>
+									</ul>
+									<span class="standard-btn project-btn" href="#3">View Project</span>
+								</figcaption>
+								<div class="work-img col" id="work-scoot"></div>
+							</figure>
+						</div>
+
+						<div class="work-container">
+							<figure class="row work-revolver">
+								<div class="work-img col" id="work-revolver"></div>
+								<figcaption class="col">
+									<h1>Revolver Yoga</h1>
+									<h2>Winter 2014</h2>
+									<ul>
+										<li><span class="circle-tag work-circle tag-proto"></span></li>
+										<li><span class="circle-tag work-circle tag-web"></span></li>
+									</ul>
+									<span class="standard-btn project-btn" href="#4">View Project</span>
+								</figcaption>
+							</figure>
+						</div>
+
+						<div class="work-container">
+							<figure class="row work-muni">
+
+								<figcaption class="col">
+									<h1>Muni Daily</h1>
+									<h2>Winter 2014</h2>
+									<ul>
+										<li><span class="circle-tag work-circle tag-d3"></span></li>
+										<li><span class="circle-tag work-circle tag-web"></span></li>
+									</ul>
+									<span class="standard-btn project-btn" href="#5">View Project</span>
+								</figcaption>
+								<div class="work-img col" id="work-muni"></div>
+							</figure>
+						</div>
+
+
+
+					</div> <!-- end of work list -->
+				</section> <!-- end of #contetn -->
 			</div> <!-- end of ajax container -->
 
 		</div> <!-- end of row -->

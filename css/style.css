@@ -1,7 +1,29 @@
+::selection {
+  background: #eee;
+  /* WebKit/Blink Browsers */ }
+
+::-moz-selection {
+  background: #ffffff;
+  /* Gecko Browsers */ }
+
 body {
   font-family: "ff-dagny-web-pro", sans-serif;
   color: #242424;
-  background-color: #frelativeff; }
+  background-color: #fff;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+p {
+  -webkit-touch-callout: default;
+  -webkit-user-select: text;
+  -khtml-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text; }
 
 body, html {
   width: 100%;
@@ -204,13 +226,103 @@ a {
         text-indent: 0px;
         margin: 0px;
         padding: 0px;
-        margin-bottom: 6px;
-        font-weight: 200; }
+        margin-bottom: 10px;
+        font-weight: 200;
+        text-transform: uppercase;
+        letter-spacing: 1px; }
         nav #nav-list li a {
           margin: 0px;
           padding: 0px;
           text-indent: 0px;
           color: #ccc; }
+
+  .thumbnail-selected-circle {
+    position: relative;
+    top: -21px;
+    font-size: 8px;
+    color: #ccc;
+    width: 0px;
+    text-align: left; }
+
+  .hidden-li {
+    visibility: hidden;
+    opacity: 0;
+    height: 0px;
+    overflow: hidden; }
+
+  .bio-info-col {
+    vertical-align: middle !important; }
+
+  .standard-btn {
+    height: 32px;
+    line-height: 32px;
+    text-indent: 0px;
+    border: 1px solid #ccc;
+    color: #ccc;
+    font-weight: 200;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    padding: 0px;
+    width: 120px;
+    text-align: center;
+    transition: 0.3s all; }
+    .standard-btn:hover {
+      cursor: pointer;
+      border-color: #999;
+      color: #999; }
+
+  .project-btn {
+    margin-top: 10px; }
+
+  .filter-btn {
+    height: 28px;
+    line-height: 28px;
+    text-indent: 0px;
+    border: 1px solid #ccc;
+    color: #ccc;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    padding: 0px;
+    width: 80px;
+    text-align: center;
+    background: #fff;
+    z-index: 1; }
+    .filter-btn span {
+      margin: 0px 0px 0px 8px;
+      font-size: 18px;
+      position: relative;
+      top: 1px; }
+    .filter-btn:hover {
+      cursor: pointer; }
+
+  #work-everlane {
+    background: url(../img/giants-yeah.jpg); }
+
+  #work-thesis {
+    background: url(../img/scoot.png); }
+
+  #work-scoot {
+    background: url(../img/a2.jpg); }
+
+  #work-revolver {
+    background: url(../img/alex.jpg); }
+
+  #work-muni {
+    background: url(../img/profile.jpg); }
+
+  .work-img {
+    max-width: 80% !important;
+    display: block;
+    height: 300px;
+    background-size: contain !important;
+    z-index: 1;
+    position: relative;
+    opacity: 1; }
 
   .active-tag {
     color: #242424 !important;
@@ -251,23 +363,36 @@ a {
   .tag-processing {
     background: #AFBEC5; }
 
-  .tag-list ul {
-    list-style: none;
-    text-indent: 0px;
-    margin: 0px;
-    padding: 0px; }
-    .tag-list ul li:last-child {
-      margin-right: 0px; }
-    .tag-list ul li {
-      margin-right: 14px;
-      color: #ccc;
-      text-indent: 0px;
-      padding: 0px;
+  .tag-list {
+    display: inline-block;
+    margin-left: 16px;
+    position: relative;
+    top: -17px; }
+    .tag-list ul {
       list-style: none;
-      display: inline-block; }
-      .tag-list ul li:hover {
-        text-decoration: underline;
-        cursor: pointer; }
+      text-indent: 0px;
+      margin: 0px;
+      padding: 0px; }
+      .tag-list ul li:last-child {
+        margin-right: 0px; }
+      .tag-list ul li {
+        opacity: 0;
+        visibility: hidden;
+        margin-right: 14px;
+        color: #ccc;
+        text-indent: 0px;
+        padding: 0px;
+        list-style: none;
+        display: inline-block;
+        position: relative;
+        left: -20px; }
+        .tag-list ul li:hover {
+          text-decoration: underline;
+          cursor: pointer; }
+
+  .work-container {
+    overflow: hidden;
+    position: relative; }
 
   .work-list {
     text-indent: 0px;
@@ -284,6 +409,44 @@ a {
       padding: 0px; }
       .work-list li span:first-child {
         margin-left: 6px; }
+    .work-list figure {
+      border-radius: 20px;
+      overflow: hidden;
+      opacity: 0;
+      position: relative; }
+
+  .work-list h1, .work-list h2 {
+    text-align: center;
+    margin: 0px;
+    padding: 0px; }
+  .work-list h1 {
+    letter-spacing: 2px;
+    text-transform: uppercase; }
+  .work-list h2 {
+    font-family: "ff-dagny-web-pro", sans-serif;
+    font-size: 18px;
+    margin-top: 2px; }
+  .work-list ul {
+    list-style: none;
+    text-indent: 0px;
+    padding: 0px;
+    margin: 0px;
+    text-align: center; }
+    .work-list ul li {
+      display: inline-block; }
+      .work-list ul li span {
+        margin: 0px 6px 0px 0px !important; }
+  .work-list figure {
+    text-align: left;
+    margin: 16px auto !important;
+    border-spacing: 0px !important;
+    border: 1px solid #eee;
+    overflow: hidden; }
+    .work-list figure figcaption {
+      vertical-align: middle !important;
+      text-align: center;
+      position: relative;
+      background: #eee; }
 
   .inactive {
     opacity: 0.5; }
@@ -306,20 +469,39 @@ a {
     border-spacing: 0px;
     max-width: 500px; }
     .bio-info .col-pic {
-      width: 100px; }
+      width: 200px; }
     .bio-info .profile-pic {
-      width: 100px;
-      height: 100px;
+      width: 200px;
+      height: 200px;
       background: url(../img/profile.jpg);
       border-radius: 8px;
       background-size: cover;
-      display: inline-block; }
+      display: inline-block;
+      position: relative;
+      overflow: hidden; }
+      .bio-info .profile-pic .profile-back-btn {
+        visibility: hidden;
+        position: absolute;
+        left: -30px;
+        top: 6px;
+        border: 1px solid rgba(255, 255, 255, 0);
+        height: 24px;
+        width: 24px;
+        border-radius: 20px;
+        line-height: 26px;
+        font-size: 12px;
+        display: inline-block;
+        text-align: center;
+        transition: border-color 0.3s, color 0.3s; }
+        .bio-info .profile-pic .profile-back-btn:hover {
+          border-color: white;
+          cursor: pointer; }
     .bio-info .bio-btn-list {
       list-style: none;
       text-indent: 0px;
       margin: 0px;
       padding: 0px;
-      margin-left: 15px; }
+      padding-left: 20px; }
       .bio-info .bio-btn-list li:last-child {
         margin-bottom: 0px !important; }
       .bio-info .bio-btn-list li {
@@ -331,7 +513,7 @@ a {
         text-indent: 0px;
         border: 1px solid #ccc;
         border-radius: 6px;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
         position: relative;
         overflow: hidden;
         display: inline-block;
@@ -382,7 +564,9 @@ a {
       color: #FF9825;
       border-bottom: 1px solid #FF9825;
       padding-bottom: 0px;
-      transition: 0.3s all; }
+      transition: 0.3s color, 0.3s border-color;
+      position: relative;
+      display: inline; }
       .bio-copy .giants-link:hover {
         cursor: pointer;
         color: #EF6A1D;
@@ -437,25 +621,42 @@ a {
   .project-container .image-container-col {
     width: 100%;
     height: 350px;
-    background: #eee;
+    background: url(../img/sprite-a.jpg) no-repeat 0px 0px;
+    background-size: cover;
     border-radius: 8px;
     overflow: hidden; }
   .project-container .thumbnail-col {
     width: 200px;
-    padding-left: 10px; }
+    padding-left: 10px;
+    vertical-align: middle !important; }
     .project-container .thumbnail-col ul {
       list-style: none;
       margin: 0px;
       padding: 0px; }
+      .project-container .thumbnail-col ul li:first-child .image-thumbnail {
+        background: url(../img/project-img-0.jpg); }
+      .project-container .thumbnail-col ul li:nth-child(2) .image-thumbnail {
+        background: url(../img/project-img-1.jpg); }
+      .project-container .thumbnail-col ul li:nth-child(3) .image-thumbnail {
+        background: url(../img/project-img-2.jpg); }
+      .project-container .thumbnail-col ul li:nth-child(4) .image-thumbnail {
+        background: url(../img/project-img-3.jpg); }
+      .project-container .thumbnail-col ul li:last-child {
+        margin-bottom: 0px !important; }
+        .project-container .thumbnail-col ul li:last-child .image-thumbnail {
+          background: url(../img/project-img-4.jpg); }
       .project-container .thumbnail-col ul li {
         margin-bottom: 8px;
-        opacity: 0.5;
-        transition: 0.3s all; }
+        opacity: 0.3;
+        transition: 0.3s opacity;
+        position: relative; }
         .project-container .thumbnail-col ul li:hover {
-          opacity: 1;
+          opacity: 1 !important;
           cursor: pointer; }
       .project-container .thumbnail-col ul .image-thumbnail {
-        background: #ccc;
+        position: relative;
+        background-color: #ccc;
+        background-size: cover !important;
         height: 50px;
         width: 50px;
         border-radius: 6px;
