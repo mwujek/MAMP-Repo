@@ -15,7 +15,8 @@ body {
   -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none; }
+  user-select: none;
+  background: url(../img/7.jpg); }
 
 p, .email-address {
   -webkit-touch-callout: default;
@@ -137,7 +138,8 @@ a {
 
   nav {
     width: 235px;
-    position: relative; }
+    position: relative;
+    padding-left: 12px; }
     nav .up-arrow {
       position: fixed;
       bottom: 50px;
@@ -230,7 +232,7 @@ a {
         margin-bottom: 6px;
         font-weight: 300;
         letter-spacing: 1px;
-        font-size: 16px; }
+        font-size: 18px; }
         nav #nav-list li a {
           margin: 0px;
           padding: 0px;
@@ -524,7 +526,6 @@ a {
     margin-right: 6px; }
 
   .section-title {
-    text-transform: uppercase;
     position: relative;
     font-size: 24px;
     letter-spacing: 2px;
@@ -610,10 +611,11 @@ a {
         padding: 0px 20px;
         box-sizing: border-box !important;
         border-left: 1px solid #ccc;
-        color: #ccc;
+        color: #242424;
+        opacity: 0.4;
         height: 28px; }
       .bio-info .bio-btn-list .fa-external-link {
-        color: #ccc;
+        color: #242424;
         position: relative;
         text-align: center;
         line-height: 28px;
