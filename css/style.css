@@ -7,7 +7,7 @@
   /* Gecko Browsers */ }
 
 body {
-  font-family: "ff-dagny-web-pro", sans-serif;
+  font-family: "franklin-gothic-urw", sans-serif;
   color: #242424;
   background-color: #fff;
   -webkit-touch-callout: none;
@@ -17,7 +17,7 @@ body {
   -ms-user-select: none;
   user-select: none; }
 
-p {
+p, .email-address {
   -webkit-touch-callout: default;
   -webkit-user-select: text;
   -khtml-user-select: text;
@@ -30,7 +30,7 @@ body, html {
   height: 100%; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "sofia-pro", sans-serif;
+  font-family: "franklin-gothic-urw", sans-serif;
   font-weight: 200;
   display: block;
   max-width: 100%; }
@@ -62,7 +62,7 @@ a {
   color: #ccc; }
 
 .text-container {
-  transition: 0.3s all;
+  transition: 0.3s opacity;
   margin-top: 120px; }
   .text-container h1 {
     margin: 40px auto 20px auto;
@@ -76,8 +76,8 @@ p {
   padding: 0 8px; }
 
 h1 {
-  font-family: "sofia-pro", sans-serif;
-  font-weight: 700;
+  font-family: "franklin-gothic-urw", sans-serif;
+  font-weight: 500;
   font-size: 24px; }
 
 .container {
@@ -144,7 +144,7 @@ a {
       right: 50px;
       font-size: 30px;
       opacity: 0.5;
-      transition: 0.3s all;
+      transition: 0.3s opacity;
       border: 1px solid #242424;
       width: 40px;
       text-align: center;
@@ -169,48 +169,49 @@ a {
       border-radius: 8px;
       position: absolute;
       bottom: 1px;
-      right: 80px;
+      right: 40px;
       border: 1px solid #ccc;
-      background: #fff;
-      transition: 0.5s all; }
+      background: #fff; }
     nav #indicator-line {
       transform-origin: center left;
-      width: 80px;
+      width: 40px;
       display: block;
       position: absolute;
       bottom: 9px;
       right: 0px;
       height: 1px;
       background: #ccc; }
-    nav h1, nav h2 {
-      font-family: "sofia-pro", sans-serif; }
     nav h1 {
+      font-family: "franklin-gothic-urw", sans-serif;
       padding-top: 60px;
       margin-top: 0px;
-      margin-bottom: 16px;
+      margin-bottom: 10px;
+      font-weight: 500;
       font-size: 24px;
       line-height: 24px;
+      letter-spacing: 0.5px;
       position: relative; }
     nav h2 {
+      font-family: "franklin-gothic-urw", sans-serif;
       margin: 0px;
       padding: 0px;
       font-size: 18px;
       line-height: 24px;
-      color: #ccc; }
+      letter-spacing: 0.5px;
+      font-weight: 300; }
     nav .menu-btn {
-      color: #ccc;
-      text-transform: uppercase;
-      font-size: 14px;
-      letter-spacing: 2px;
-      border-bottom: 1px #ccc solid;
+      color: #242424;
+      font-size: 18px;
+      letter-spacing: 0.5px;
+      border-bottom: 1px #242424 solid;
       padding-bottom: 1px;
-      margin-top: 20px;
+      margin-top: 14px;
       display: inline-block;
-      font-weight: 200;
-      transition: 0.3s all; }
+      font-weight: 300;
+      opacity: 0.4;
+      transition: 0.3s opacity; }
     nav .active-nav {
-      color: #242424 !important;
-      border-color: #242424; }
+      opacity: 1; }
     nav #nav-list {
       display: block;
       list-style: none;
@@ -226,21 +227,30 @@ a {
         text-indent: 0px;
         margin: 0px;
         padding: 0px;
-        margin-bottom: 10px;
-        font-weight: 200;
-        text-transform: uppercase;
-        letter-spacing: 1px; }
+        margin-bottom: 6px;
+        font-weight: 300;
+        letter-spacing: 1px;
+        font-size: 16px; }
         nav #nav-list li a {
           margin: 0px;
           padding: 0px;
           text-indent: 0px;
-          color: #ccc; }
+          color: #242424;
+          transition: 0.3s opacity;
+          opacity: 0.4; }
+          nav #nav-list li a:hover {
+            opacity: 1; }
 
   .work-expand {
+    margin-top: 40px;
     height: 0;
     overflow: hidden;
-    background: #ccc;
-    border: 1px solid #333; }
+    opacity: 0;
+    border-top: 1px solid #eee; }
+    .work-expand .text-content h1 {
+      text-align: center; }
+    .work-expand .text-content p {
+      padding: 0px 10px; }
 
   .thumbnail-selected-circle {
     position: relative;
@@ -260,34 +270,54 @@ a {
     vertical-align: middle !important; }
 
   .standard-btn {
-    height: 32px;
-    line-height: 32px;
+    height: 34px;
+    line-height: 34px;
     text-indent: 0px;
-    border: 1px solid #ccc;
-    color: #ccc;
-    font-weight: 200;
+    border: 1px solid #242424;
+    color: #242424;
+    font-weight: 300;
     border-radius: 6px;
     position: relative;
     overflow: hidden;
-    display: inline-block;
+    display: block;
+    margin: 0 auto;
     padding: 0px;
     width: 120px;
+    opacity: 0.4;
     text-align: center;
-    transition: 0.3s all; }
+    transition: 0.3s opacity; }
     .standard-btn:hover {
       cursor: pointer;
-      border-color: #999;
-      color: #999; }
+      opacity: 1; }
 
   .project-btn {
-    margin-top: 10px; }
+    margin-top: 10px;
+    position: relative; }
+    .project-btn span {
+      position: relative; }
+
+  .no-hover {
+    border-color: #fff !important;
+    border-top-color: #ccc !important;
+    border-radius: 0px;
+    padding-top: 4px;
+    width: auto;
+    max-width: 250px;
+    display: block;
+    line-height: 20px;
+    height: auto;
+    padding-top: 14px; }
+    .no-hover:hover {
+      cursor: default;
+      border-color: #ccc;
+      color: #ccc; }
 
   .filter-btn {
     height: 28px;
     line-height: 28px;
     text-indent: 0px;
-    border: 1px solid #ccc;
-    color: #ccc;
+    border: 1px solid #242424;
+    color: #242424;
     border-radius: 6px;
     margin-bottom: 8px;
     position: relative;
@@ -297,7 +327,9 @@ a {
     width: 80px;
     text-align: center;
     background: #fff;
-    z-index: 1; }
+    z-index: 1;
+    opacity: 0.4;
+    transition: 0.3s opacity; }
     .filter-btn .filter-text {
       position: relative; }
     .filter-btn .filter-cross {
@@ -306,7 +338,22 @@ a {
       position: relative;
       top: 1px; }
     .filter-btn:hover {
+      cursor: pointer;
+      opacity: 1; }
+
+  .thumbnail-img {
+    opacity: 0.5;
+    transition: 0.3s opacity; }
+    .thumbnail-img:hover {
+      opacity: 1;
       cursor: pointer; }
+
+  #everlane-container figcaption ul li .hidden-tag-img {
+    width: 100%;
+    height: 100%;
+    background: url(../img/giants-yeah.jpg);
+    background-size: cover;
+    opacity: 0; }
 
   #work-everlane {
     background: url(../img/giants-yeah.jpg); }
@@ -315,10 +362,10 @@ a {
     background: url(../img/scoot.png); }
 
   #work-scoot {
-    background: url(../img/a2.jpg); }
+    background: url(../img/giants-yeah.jpg); }
 
   #work-revolver {
-    background: url(../img/alex.jpg); }
+    background: url(../img/scoot.png); }
 
   #work-muni {
     background: url(../img/profile.jpg); }
@@ -338,9 +385,10 @@ a {
 
   .circle-tag {
     display: inline-block;
+    overflow: hidden;
     width: 10px;
     height: 10px;
-    border-radius: 12px;
+    border-radius: 50px;
     background: #333;
     margin-right: 6px; }
 
@@ -384,23 +432,30 @@ a {
       .tag-list ul li:last-child {
         margin-right: 0px; }
       .tag-list ul li {
-        opacity: 0;
         visibility: hidden;
         margin-right: 14px;
-        color: #ccc;
+        color: #242424;
         text-indent: 0px;
         padding: 0px;
         list-style: none;
         display: inline-block;
         position: relative;
         left: -20px; }
+        .tag-list ul li span {
+          opacity: 1; }
         .tag-list ul li:hover {
           text-decoration: underline;
           cursor: pointer; }
 
   .work-container {
     overflow: hidden;
-    position: relative; }
+    position: relative;
+    margin-bottom: 25px; }
+    .work-container .line-break {
+      display: block;
+      width: 100%;
+      height: 1px;
+      background: #eee; }
 
   .work-list {
     text-indent: 0px;
@@ -411,32 +466,17 @@ a {
     position: relative; }
     .work-list li {
       text-indent: 0px;
-      opacity: 0.5;
-      font-family: "sofia-pro", sans-serif;
+      font-family: "franklin-gothic-urw", sans-serif;
       margin: 0px;
       font-size: 24px;
       padding: 0px; }
-      .work-list li span:first-child {
-        margin-left: 6px; }
     .work-list figure {
-      border-radius: 20px;
       overflow: hidden;
       opacity: 0;
       position: relative; }
 
   .work-list {
     position: relative; }
-    .work-list h1, .work-list h2 {
-      text-align: center;
-      margin: 0px;
-      padding: 0px; }
-    .work-list h1 {
-      letter-spacing: 2px;
-      text-transform: uppercase; }
-    .work-list h2 {
-      font-family: "ff-dagny-web-pro", sans-serif;
-      font-size: 18px;
-      margin-top: 2px; }
     .work-list ul {
       list-style: none;
       text-indent: 0px;
@@ -444,20 +484,37 @@ a {
       margin: 0px;
       text-align: center; }
       .work-list ul li {
-        display: inline-block; }
+        display: inline-block;
+        text-align: center; }
         .work-list ul li span {
-          margin: 0px 6px 0px 0px !important; }
+          margin: 0px 4px 0px 4px; }
+      .work-list ul .hidden-li-tag {
+        opacity: 0;
+        width: 0px;
+        visibility: hidden; }
+        .work-list ul .hidden-li-tag span {
+          background: #ccc; }
     .work-list figure {
       text-align: left;
       margin: 16px auto !important;
       border-spacing: 0px !important;
-      border: 1px solid #eee;
       overflow: hidden; }
       .work-list figure figcaption {
         vertical-align: middle !important;
         text-align: center;
-        position: relative;
-        background: #eee; }
+        position: relative; }
+        .work-list figure figcaption h1, .work-list figure figcaption h2 {
+          text-align: center;
+          margin: 0px;
+          padding: 0px; }
+        .work-list figure figcaption h1 {
+          letter-spacing: 1px; }
+        .work-list figure figcaption h2 {
+          font-family: "franklin-gothic-urw", sans-serif;
+          font-size: 16px;
+          margin-top: 2px;
+          text-transform: uppercase;
+          letter-spacing: 1px; }
 
   .inactive {
     opacity: 0.5; }
@@ -472,7 +529,7 @@ a {
     font-size: 24px;
     letter-spacing: 2px;
     text-align: left !important;
-    margin-top: 54px !important;
+    margin-top: 60px !important;
     margin-bottom: 16px !important; }
 
   .bio-info {
@@ -560,12 +617,12 @@ a {
         position: relative;
         text-align: center;
         line-height: 28px;
-        transition: 0.3s all; }
+        transition: 0.3s background; }
         .bio-info .bio-btn-list .fa-external-link:hover {
           background: #eee; }
 
   .bio-copy {
-    font-family: "sofia-pro", sans-serif;
+    font-family: "franklin-gothic-urw", sans-serif;
     font-size: 24px;
     line-height: 32px;
     max-width: 650px;
@@ -597,7 +654,7 @@ a {
       margin-bottom: 0px;
       margin-top: 14px; }
     div.blog-roll h2.date {
-      font-family: "ff-dagny-web-pro", sans-serif;
+      font-family: "franklin-gothic-urw", sans-serif;
       font-size: 16px;
       display: block;
       margin-top: 6px; }
@@ -618,6 +675,9 @@ a {
     height: 1px;
     background: #ddd;
     margin: 60px auto 40px auto; }
+
+  .active-thumbnail {
+    opacity: 1; }
 
   .project-top-container {
     border-spacing: 0px; }
@@ -670,7 +730,6 @@ a {
         background-size: cover !important;
         height: 50px;
         width: 50px;
-        border-radius: 6px;
         display: inline-block;
         margin: 0px; }
       .project-container .thumbnail-col ul .thumbnail-info {

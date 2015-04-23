@@ -19414,17 +19414,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/home.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 19367,
-		"inputAbbreviatedPath": "\/img\/home.png",
-		"outputAbbreviatedPath": "\/img\/home.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/img\/homeHeader.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -19447,6 +19436,61 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/project-img-0.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 925210,
+		"inputAbbreviatedPath": "\/img\/project-img-0.jpg",
+		"outputAbbreviatedPath": "\/img\/project-img-0.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/project-img-1.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 180726,
+		"inputAbbreviatedPath": "\/img\/project-img-1.jpg",
+		"outputAbbreviatedPath": "\/img\/project-img-1.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/project-img-2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 99665,
+		"inputAbbreviatedPath": "\/img\/project-img-2.jpg",
+		"outputAbbreviatedPath": "\/img\/project-img-2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/project-img-3.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 250554,
+		"inputAbbreviatedPath": "\/img\/project-img-3.jpg",
+		"outputAbbreviatedPath": "\/img\/project-img-3.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/project-img-4.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 311363,
+		"inputAbbreviatedPath": "\/img\/project-img-4.jpg",
+		"outputAbbreviatedPath": "\/img\/project-img-4.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/revolver.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -19465,6 +19509,17 @@
 		"initialSize": 43566,
 		"inputAbbreviatedPath": "\/img\/scoot.png",
 		"outputAbbreviatedPath": "\/img\/scoot.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/sprite-a.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 925210,
+		"inputAbbreviatedPath": "\/img\/sprite-a.jpg",
+		"outputAbbreviatedPath": "\/img\/sprite-a.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -19517,6 +19572,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/jquery.ba-hashchange.min.js",
 		"outputAbbreviatedPath": "\/js\/min\/jquery.ba-hashchange.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/loading-dots-w-lines.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/loading-dots-w-lines.js",
+		"outputAbbreviatedPath": "\/js\/min\/loading-dots-w-lines-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,

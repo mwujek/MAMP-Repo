@@ -1,4 +1,4 @@
-var count =20;
+var count =6;
 var threshold = 0.99; // distance to target
 var dots = [];
 var locations = [];
